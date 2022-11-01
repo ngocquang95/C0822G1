@@ -2,6 +2,9 @@ package ss7_abstract_interface;
 
 //Generic
 public class Bird extends Animal implements Flyable, Flyable2 {
+    public Bird() {
+    }
+
     @Override
     public void tiengKeu() {
         System.out.println("Chíp chíp");
@@ -12,7 +15,7 @@ public class Bird extends Animal implements Flyable, Flyable2 {
         System.out.println("Chi có thể bay");
     }
 
-    public void flyDefault(){
+    public void flyDefault() {
         System.out.println("class Bird");
     }
 }
