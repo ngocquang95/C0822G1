@@ -2,6 +2,7 @@ package ss8_clean_code.mvc.controller;
 
 import ss8_clean_code.mvc.service.IStudentService;
 import ss8_clean_code.mvc.service.impl.StudentService;
+import ss8_clean_code.mvc.service.impl.StudentService2;
 
 /**
  * M: Model Lớn = model nhỏ + Service
@@ -15,7 +16,7 @@ import ss8_clean_code.mvc.service.impl.StudentService;
  * + Điều hướng
  */
 public class StudentController {
-    private IStudentService iStudentService = new StudentService();
+    private IStudentService iStudentService = new StudentService2();
     public void displayMenu() {
         int chose = 2;
         System.out.println("============= Menu =============");
